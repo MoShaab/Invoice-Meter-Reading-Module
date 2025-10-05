@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_move_line_meter_user,account.move.line.meter.user,account.model_account_move_line,base.group_user,1,1,1,0
+access_account_move_line_meter_accountant,account.move.line.meter.accountant,account.model_account_move_line,account.group_account_invoice,1,1,1,1
+access_account_move_meter_user,account.move.meter.user,account.model_account_move,base.group_user,1,1,1,0
+access_account_move_meter_accountant,account.move.meter.accountant,account.model_account_move,account.group_account_invoice,1,1,1,1
