@@ -35,7 +35,7 @@ Custom Odoo module that adds meter reading functionality to customer invoices fo
 
 ### Creating Invoices with Meter Readings
 
-1. **Create Invoice**: `Accounting → Customers → Invoices → Create`
+1. **Create Invoice**: `Accounting → Customers → Invoices → New`
 2. **Add Product**: Select customer and add invoice line with product
 3. **Previous Reading**: Auto-fills from last invoice (if exists)
 4. **Enter New Reading**: Type current meter reading in "New" column
