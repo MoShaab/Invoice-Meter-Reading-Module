@@ -21,7 +21,7 @@ Custom Odoo module that adds meter reading functionality to customer invoices fo
 ## Installation
 
 ### Prerequisites
-- Odoo 14.0 or higher (tested on 16.0, 17.0, 19.0)
+- Odoo 16.0 or higher (tested on 19.0)
 - Accounting module installed
 
 ### Steps
@@ -82,27 +82,10 @@ Custom Odoo module that adds meter reading functionality to customer invoices fo
 - `_compute_meter_actual()`: Calculates consumption
 - `_onchange_meter_actual()`: Auto-populates quantity
 - `_check_meter_readings()`: Validates readings
-- `create()`: Auto-retrieves previous reading
+- `_onchange_product_id`: Verify previous reading auto-fills when new inovice is created
 - `action_post()`: Final validation before posting
 
-## Configuration
-No additional configuration required. Works out of the box.
 
-## Troubleshooting
-
-### Previous reading not showing?
-- Ensure previous invoice is posted (not draft)
-- Check that previous invoice has same customer and product
-- Verify previous invoice has a "New" reading value
-
-### Cannot post invoice?
-- New reading must be >= previous reading
-- Check for typos in meter readings
-
-### Fields not visible?
-- Clear browser cache
-- Check module is installed and updated
-- Verify you're on the Invoice form view
 
 ## Development
 
@@ -127,9 +110,3 @@ LGPL-3
 **MoShaab**  
 GitHub: https://github.com/MoShaab/Invoice-Meter-Reading-Module
 
-## Version History
-- **1.0.0** (2024-10-05): Initial release
-  - Basic meter reading functionality
-  - Auto-retrieval of previous readings
-  - Validation and error handling
-  - Invoice report integration
